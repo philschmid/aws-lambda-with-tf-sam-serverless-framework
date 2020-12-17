@@ -1,0 +1,17 @@
+service: docker-lambda
+
+provider:
+  name: aws
+  runtime: python3.8
+  logs:
+    httpApi: true
+  stage: dev
+  region: eu-central-1
+
+functions:
+  app:
+    image: 891511646143.dkr.ecr.eu-central-1.amazonaws.com/docker-lambda@sha256:17970b9af768cc77168ee55ad4400affb9a40cb17d33ef81b36b270b23905501
+    events:
+      - httpApi:
+          method: GET
+          path: /
