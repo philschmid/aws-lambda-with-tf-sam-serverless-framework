@@ -10,7 +10,7 @@ provider:
 
 functions:
   app:
-    image: 891511646143.dkr.ecr.eu-central-1.amazonaws.com/docker-lambda@sha256:17970b9af768cc77168ee55ad4400affb9a40cb17d33ef81b36b270b23905501
+    image: 891511646143.dkr.ecr.eu-central-1.amazonaws.com/docker-lambda@sha256:bfba93a009591efe05ab40b753582ee5ec4d609ea278ed6c3441b9ff921f8fd2
     events:
       - httpApi:
           method: GET

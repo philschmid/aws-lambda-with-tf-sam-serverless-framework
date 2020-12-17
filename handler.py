@@ -4,7 +4,7 @@ import pyjokes
 
 def handler(event, context):
     body = {
-        pyjokes.get_joke()
+        "joke":pyjokes.get_joke()
     }
     response = {
         "statusCode": 200,
